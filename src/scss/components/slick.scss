@@ -1,0 +1,62 @@
+.slick-slider-block {
+    &.is-bleeding {
+        overflow: hidden;
+
+        .slick-list {
+            overflow: visible;
+        }
+    }
+    padding-bottom: 20px;
+}
+
+.slick-slider-wrapper {
+    .slick-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 16px;
+
+        button {
+            border: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+    }
+
+    .slick-bleed .slick-list {
+        padding: 30px 0 !important;
+    }
+
+    .slick-track {
+        display: flex !important;
+    }
+
+    .slick-slide {
+        margin: 0 10px;
+        height: inherit !important;
+
+        .card {
+            height: 100%;
+        }
+    }
+
+    .slick-list {
+        margin: 0 -10px;
+    }
+
+    figure {
+        margin: 0;
+        
+        img { 
+            max-width: 100%;
+        }
+    }
+}
+
+.slick-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}

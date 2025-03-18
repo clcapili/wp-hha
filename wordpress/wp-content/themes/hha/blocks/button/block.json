@@ -1,0 +1,16 @@
+{
+    "name": "custom/button",
+    "title": "Button",
+    "description": "A button block.",
+    "category": "custom-blocks",
+    "icon": "button",
+    "keywords": ["button"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "button.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

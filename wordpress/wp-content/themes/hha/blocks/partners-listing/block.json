@@ -1,0 +1,16 @@
+{
+    "name": "custom/partners-listing",
+    "title": "Partners Listing",
+    "description": "A Partners Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Partners", "Listing", "Partners Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "partners-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

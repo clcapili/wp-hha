@@ -1,0 +1,16 @@
+{
+    "name": "custom/testimonial",
+    "title": "Testimonial",
+    "description": "A Testimonial block.",
+    "category": "custom-blocks",
+    "icon": "testimonial",
+    "keywords": ["Testimonial"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "testimonial.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

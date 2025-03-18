@@ -1,0 +1,291 @@
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.button-block {
+    width: fit-content;
+}
+
+.btn-primary {
+    color: $dark-green;
+
+    &:hover {
+        background-color: $green-75;
+        border-color: $green-75;
+        color: $dark-green;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    &:focus {
+        background-color: $primary !important;
+        border-color: $primary;
+        box-shadow: 0 0 0 0.188rem $dark-green-50;
+    }
+}
+
+.btn-dark {
+    color: $white;
+
+    &:hover {
+        background-color: $dark-green-75;
+        border-color: $dark-green-75;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    &:focus {
+        background-color: $dark-green !important;
+        border-color: $dark-green;
+        box-shadow: 0 0 0 0.188rem $dark-green-50;
+    }
+}
+
+.btn-light {
+    color: $dark-green;
+
+    &:hover {
+        background-color: $green-25;
+        border-color: $green-25;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    &:focus {
+        background-color: $white !important;
+        color: $white;
+        box-shadow: 0 0 0 0.188rem $primary;
+    }
+}
+
+
+// btn link
+.btn-link {
+    position: relative;
+    padding: 0;
+    margin-bottom: 5px;
+    border-radius: 0;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    color: $dark-green;
+    line-height: 1;
+    text-decoration: none;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 4px;
+        background: none repeat scroll 0 0 $primary;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    &:hover {
+        color: $dark-green-75 !important;
+
+        &:after {
+            animation: shrink 0.3s forwards, expand 0.3s 0.3s forwards;
+        }
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 .25rem $dark-green-50;
+    }
+
+    @include color-mode(dark) {
+        color: $primary;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+// btn link end
+
+@each $color, $value in $colors {
+    .text-bg-#{$color} {
+        .btn-link {
+            color: $dark-green !important;
+
+            &:after {
+                background-color: $dark-green !important;
+            }
+        }
+    }
+}
+
+
+// outline buttons
+.btn-outline-primary {
+    background-color: transparent;
+    color: $dark-green;
+    border-color: $primary;
+
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: $dark-green;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    &:focus {
+        background-color: $primary !important;
+        border-color: $primary;
+        color: $dark-green;
+        box-shadow: 0 0 0 0.188rem $dark-green-50;
+    }
+}
+
+.btn-outline-dark {
+    background-color: transparent;
+    color: $dark-green;
+    border-color: $dark-green;
+
+    &:hover {
+        background-color: $dark-green;
+        border-color: $dark-green;
+        color: $white;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    &:focus {
+        background-color: $dark-green !important;
+        color: $white;
+        box-shadow: 0 0 0 0.188rem $dark-green-50;
+    }
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $dark-green;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    &:focus {
+        background-color: $white !important;
+        border-color: $white;
+        color: $dark-green;
+        box-shadow: 0 0 0 0.188rem $dark-green-25;
+    }
+}
+
+// disabled buttons
+.btn-primary,
+.btn-dark,
+.btn-light {
+    &.disabled {
+        background-color: $gray-400;
+        border-color: $gray-400;
+        color: $gray-200;
+    }
+}
+
+.btn-outline-primary,
+.btn-outline-dark,
+.bt-outline-light {
+    &.disabled {
+        background-color: transparent;
+        color: $gray-200;
+        border-color: $gray-400;
+    }
+}
+
+.wpcf7 {
+    .wpcf7-submit {
+        &:disabled {
+            background-color: $gray-400;
+            border-color: $gray-400;
+            color: $gray-200;
+        }
+    }
+}
+
+// btn play
+.btn-play {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        width: 100px;
+        height: 100px;
+        background-color: $primary;
+        border-radius: 50px;
+    }
+
+    &:after { 
+        content: ""; 
+        display: block; 
+        position: absolute; 
+        top: 50%; 
+        left: 50.5%; 
+        transform: translate(-50%, -50%);
+        z-index: 2; 
+
+        width: 30px;
+        height: 40px;
+        border-style: solid;
+        border-width: 20px 0px 20px 30px;
+        border-color: transparent transparent transparent $white;
+    }
+}
+
+// link arrow
+.link-arrow {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: $gray-800;
+    font-weight: 600;
+    text-decoration: none;
+
+    .icon {
+        color: $gray-500;
+        margin-left: 5px;
+    }
+
+    &:hover {
+        color: $dark-green;
+
+        .icon {
+            color: $dark-green;
+        }
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 .25rem $dark-green-50;
+    }
+}

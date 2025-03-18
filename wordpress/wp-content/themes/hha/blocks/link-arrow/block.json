@@ -1,0 +1,16 @@
+{
+    "name": "custom/link-arrow",
+    "title": "Link Arrow",
+    "description": "A Link Arrow block.",
+    "category": "custom-blocks",
+    "icon": "admin-links",
+    "keywords": ["Link", "Arrow", "Link Arrow"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "link-arrow.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

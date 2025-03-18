@@ -1,0 +1,17 @@
+{
+    "name": "custom/tab-pane",
+    "title": "Tab Pane",
+    "description": "A Tab Pane block.",
+    "category": "custom-blocks",
+    "icon": "table-row-after",
+    "keywords": ["Tab", "Pane", "Tab Pane"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "tab-pane.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

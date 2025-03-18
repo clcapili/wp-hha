@@ -1,0 +1,16 @@
+{
+    "name": "custom/events-listing",
+    "title": "Events Listing",
+    "description": "An Events Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Events", "Listing", "Events Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "events-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

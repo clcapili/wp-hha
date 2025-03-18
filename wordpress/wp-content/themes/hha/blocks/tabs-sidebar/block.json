@@ -1,0 +1,17 @@
+{
+    "name": "custom/tabs-sidebar",
+    "title": "Tabs Sidebar",
+    "description": "A Tabs Sidebar Menu block.",
+    "category": "custom-blocks",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["Sidebar", "Tabs", "Tabs Sidebar"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "tabs-sidebar.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "custom/featured-post",
+    "title": "Featured Post",
+    "description": "A Featured Post block.",
+    "category": "custom-blocks",
+    "icon": "index-card",
+    "keywords": ["Post", "Featured", "Featured Post"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "featured-post.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

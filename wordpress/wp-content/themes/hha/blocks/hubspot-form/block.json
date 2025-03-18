@@ -1,0 +1,17 @@
+{
+    "name": "custom/hubspot-form",
+    "title": "Hubspot Form",
+    "description": "A Hubspot Form block.",
+    "category": "custom-blocks",
+    "icon": "cover-image",
+    "keywords": ["Form", "Hub Spot"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hubspot-form.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

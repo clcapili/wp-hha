@@ -1,0 +1,16 @@
+{
+    "name": "custom/card-stat",
+    "title": "Card Stat",
+    "description": "A Card Stat block.",
+    "category": "custom-blocks",
+    "icon": "index-card",
+    "keywords": ["Card", "Stat", "Card Stat"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "card-stat.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

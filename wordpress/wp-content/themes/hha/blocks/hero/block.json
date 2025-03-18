@@ -1,0 +1,16 @@
+{
+    "name": "custom/hero",
+    "title": "Hero",
+    "description": "A Hero block.",
+    "category": "custom-blocks",
+    "icon": "cover-image",
+    "keywords": ["Hero"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

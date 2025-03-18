@@ -1,0 +1,16 @@
+{
+    "name": "custom/latest-posts-manual",
+    "title": "Latest Posts (Manual)",
+    "description": "A Latest Posts (Manual) block.",
+    "category": "custom-blocks",
+    "icon": "admin-post",
+    "keywords": ["Latest Posts (Manual)", "Posts", "Latest", "Manual"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "latest-posts-manual.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

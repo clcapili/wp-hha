@@ -1,0 +1,62 @@
+// list style
+ul.wp-block-list {
+    li {
+        padding-left: .5rem;
+
+        &::marker {
+            font-size: 12px;
+            line-height: 0.5;
+        }
+    }
+}
+
+// blocks
+// quote
+.wp-block-quote { 
+    background-color: transparent;
+    color: $dark-green;
+    margin: 40px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+
+    @media(min-width: 768px) {
+        width: calc(100% - 20%) !important;
+    }
+
+    cite {
+        font-style: normal; 
+    }
+}
+
+// image
+.wp-block-image {
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+.wp-block-image.is-style-rounded {
+    img {
+        border-radius: 100%;
+    }
+}
+
+.wp-block-image .alignright {
+    float: right;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.wp-block-image {
+    .aligncenter {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    figcaption {
+        font-size: 0.875rem;
+    }
+}

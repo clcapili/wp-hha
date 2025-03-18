@@ -1,0 +1,17 @@
+{
+    "name": "custom/slick-slider",
+    "title": "Slick Slider",
+    "description": "A slick slider block.",
+    "category": "custom-blocks",
+    "icon": "image-flip-horizontal",
+    "keywords": ["Slick", "Slider", "Slick Slider"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slick-slider.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

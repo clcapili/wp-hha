@@ -1,0 +1,163 @@
+a.card {
+    text-decoration: none;
+}
+
+.card {
+    .card-glyph {
+        display: block;
+        margin-bottom: 1rem;
+        color: $dark-green;
+    }
+
+    .card-pretitle {
+        margin-bottom: var(--bs-card-title-spacer-y);
+        color: var(--bs-card-title-color);
+        font-weight: 700;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+    
+}
+
+.card-center {
+    text-align: center;
+    
+    img {
+        align-self: center;
+    }
+
+}
+
+.card-flush {
+    background-color: transparent;
+    border: none;
+
+    .card-body {
+        background-color: transparent;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+}
+
+@include color-mode(dark) {
+    .card-flush {
+
+        .card-title {
+           color: $white;
+        }
+
+        .display-1 {
+            color: $green;
+        }
+
+        .card-text {
+            color: $white !important;
+        }
+    }
+}
+
+
+.card-horizontal {
+    .card-img-left {
+        border-top-left-radius: var(--bs-card-border-radius);
+        border-top-right-radius: var(--bs-card-border-radius);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        min-height: 100%;
+        min-width: 100%;
+
+        display: block;
+
+        @media (min-width: 768px) {
+            border-top-left-radius: var(--bs-card-border-radius);
+            border-top-right-radius: 0;
+            border-bottom-left-radius: var(--bs-card-border-radius);
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    .card-body {
+        padding-left: 4rem;
+        padding-right: 6.25rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .icon-cargiver {
+        font-size: 7rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: $white;
+    }
+}
+
+.card-solution {
+    border: 3px solid $white;
+    
+    &:hover {
+        border-color: $green;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    .card-glyph {
+        color: $green;
+    }
+}
+
+.card-profile {
+    text-align: center;
+    padding: 0 18% !important;
+
+    @media (min-width: 768px) {
+        padding: 0 10% !important;
+    }
+
+    @media (min-width: 992px) {
+        padding: 0 18% !important;
+    }
+    
+    &:hover {
+        .card-img-top {
+            border-color: $green;
+        }
+    }
+
+    .card-img-top {
+        align-self: center;
+        border-radius: 100%;
+        padding: 5px;
+        border: 5px solid $dark-green;
+    }
+
+    .card-text {
+        color: $dark-green;
+        font-weight: 600;
+    }
+}
+
+.card-featured {
+    .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.card-line {
+    &:after {
+        content: '';
+        position: relative;
+        left: 0;
+        width: 40px;
+        height: 1px;
+        background-color: $primary;
+    }
+}

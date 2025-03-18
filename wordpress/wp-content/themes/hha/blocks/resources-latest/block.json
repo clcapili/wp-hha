@@ -1,0 +1,16 @@
+{
+    "name": "custom/resources-latest",
+    "title": "Resources Latest",
+    "description": "A Resources Latest block.",
+    "category": "custom-blocks",
+    "icon": "admin-post",
+    "keywords": ["Resources Latest", "Resources", "Latest"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "resources-latest.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

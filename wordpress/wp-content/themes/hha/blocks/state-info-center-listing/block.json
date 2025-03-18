@@ -1,0 +1,16 @@
+{
+    "name": "custom/state-info-center-listing",
+    "title": "State Info Center Listing",
+    "description": "A State Info Center Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["State", "Info", "Center", "Listing", "State Info Center Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "state-info-center-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

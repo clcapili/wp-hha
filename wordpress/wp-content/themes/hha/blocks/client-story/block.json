@@ -1,0 +1,16 @@
+{
+    "name": "custom/client-story",
+    "title": "Client Story",
+    "description": "A Client Story block.",
+    "category": "custom-blocks",
+    "icon": "index-card",
+    "keywords": ["Client", "Story", "Client Story"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "client-story.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

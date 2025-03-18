@@ -1,0 +1,16 @@
+{
+    "name": "custom/page-header",
+    "title": "Page Header",
+    "description": "A page header block.",
+    "category": "custom-blocks",
+    "icon": "slides",
+    "keywords": ["Page", "Header", "Page Header"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "page-header.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true
+    }
+}

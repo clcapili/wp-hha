@@ -1,0 +1,16 @@
+{
+    "name": "custom/latest-posts-automatic",
+    "title": "Latest Posts (Automatic)",
+    "description": "A Latest Posts (Automatic) block.",
+    "category": "custom-blocks",
+    "icon": "admin-post",
+    "keywords": ["Latest Posts (Automatic)", "Posts", "Latest", "Automatic"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "latest-posts-automatic.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

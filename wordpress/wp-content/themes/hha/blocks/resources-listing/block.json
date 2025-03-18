@@ -1,0 +1,16 @@
+{
+    "name": "custom/resources-listing",
+    "title": "Resources Listing",
+    "description": "A Resources Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Resource", "Resources", "Listing", "Resources Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "resources-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

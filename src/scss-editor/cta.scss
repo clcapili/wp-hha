@@ -1,0 +1,13 @@
+.cta {
+    .cta-general .cta-inner .cta-body {
+        @media (min-width: 992px) {
+            padding: 0 0 40px !important;
+        }
+    }
+
+    .cta-subscribe .cta-inner .cta-body {
+        @media (min-width: 992px) {
+            padding: 40px 0 !important;
+        }
+    }
+}

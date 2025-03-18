@@ -1,0 +1,61 @@
+.single-social {
+    .social-label {
+        color: $dark-green;
+        font-weight: 700;
+    }
+
+    .social-link {
+        font-size: 2.5rem;
+        line-height: 1;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-green;
+        }
+        
+        &:focus {
+            .icon {
+                background-color: $green-25;
+                box-shadow: 0 0 0 0.188rem $primary;
+            }
+        }
+
+        &.copy-link {
+            cursor: pointer;
+        }
+
+        .icon {
+            background-color: $green-25;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: $primary;
+            }
+
+            // icon share link
+            &.icon-link-chain {
+                position: relative;
+                top: -8px;
+                padding: 10px;
+                font-size: 1.313rem;
+            }
+        }
+    }
+}
+
+.single-post-meta {
+    span.post-meta {
+        display: block;
+        margin-right: 0;
+
+        @media (min-width: 768px) {
+            display: inline-block;
+            margin-right: 16px;
+        }
+    }
+}
+
+.post-meta {
+    color: $dark-green;
+    font-weight: 700;
+}

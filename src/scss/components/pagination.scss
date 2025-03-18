@@ -1,0 +1,37 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    .page-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+        &.disabled {
+            .link-icon {
+                opacity: 0.35;
+            }
+        }
+
+        .page-link {
+            font-weight: 700;
+
+            &:hover {
+                border-color: $primary;
+            }
+        }
+    }
+}

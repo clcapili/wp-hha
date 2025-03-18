@@ -1,0 +1,16 @@
+{
+    "name": "custom/resources-explore",
+    "title": "Resources Explore",
+    "description": "A Resources Explore block.",
+    "category": "custom-blocks",
+    "icon": "admin-post",
+    "keywords": ["Resources", "Explore", "Resources Explore"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "resources-explore.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

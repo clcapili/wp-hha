@@ -1,0 +1,175 @@
+// hubspot
+.hbspt-form {
+    .hs-form-field label:not(.hs-error-msg) {
+        font-family: 'figtree', serif !important;
+        font-weight: 400 !important;
+        color: $black !important;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 4px;
+    }
+
+    p {
+        font-family: 'figtree', serif !important;
+        color: $black !important;
+    }
+
+    a {
+        color: $dark-green !important;
+    }
+
+    .field {
+        margin-bottom: 18px;
+    }
+
+    .hs-form fieldset {
+        max-width: 100% !important;
+    }
+
+    .hs-form fieldset.form-columns-1 select {
+        width: 100%;
+    }
+
+    @media (max-width: 400px), (min-device-width: 320px) and (max-device-width: 480px) {
+        .hs-form fieldset select {
+            width: 100% !important;
+        }
+    }
+
+    .hs-form input:not([type=image]):not([type=submit]):not([type=button]):not([type=radio]):not([type=checkbox]):not([type=file]), .hs-form select {
+        font-family: 'figtree', serif !important;
+        font-size: 1rem;
+        color: $gray-800;
+        padding: 15px;
+        border: 1px solid $gray-500;
+        border-radius: 8px;
+        box-shadow: none;
+        width: 100%;
+        line-height: 18px;
+
+        &:focus {
+            box-shadow: 0 0 0 3px $dark-green-75;
+            outline: none;
+        }
+    }
+
+    .hs_submit .actions {
+        margin: 0 !important;
+        padding: 20px 0 !important;
+    }
+
+    textarea.hs-input {
+        font-family: 'figtree', serif !important;
+        font-size: 1rem;
+        color: $gray-800;
+        padding: 15px;
+        border-color: $gray-500;
+        border-radius: 8px;
+        box-sizing: border-box !important;
+        box-shadow: none;
+        width: 100%;
+        line-height: 18px;
+
+        &:focus {
+            box-shadow: 0 0 0 3px $dark-green-75;
+            outline: none;
+        }
+
+        &.error {
+            border: 1px solid $red;
+            box-shadow: none;
+        }
+    }
+
+    input.hs-input, textarea.hs-input, select.hs-input {
+        height: auto;
+        transition: border 0.2s linear,box-shadow 0.2s linear;
+    }
+
+    .hs-richtext {
+        color: $black;
+        font-size: 14px;
+    }
+
+    .inputs-list {
+        padding: 0 !important;
+
+        .hs-form-booleancheckbox {
+            list-style-type: none;
+        }
+    }
+
+    .inputs-list input[type=checkbox] {
+        appearance: none !important;
+        width: 16px !important;
+        height: 16px !important;
+        border: 1px solid $gray-500 !important;
+        border-radius: 4px !important;
+        background-color: $white !important;
+        cursor: pointer !important;
+        position: relative !important;
+
+        &:checked {
+            background-color: $primary !important;
+            border-color: $dark-green !important;
+            box-shadow: 0 0 0 3px $dark-green !important;
+
+            &:after {
+                content: '✓' !important;
+                color: $dark-green !important;
+                font-size: 16px !important;
+                position: absolute !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+            }
+        }
+    }
+
+    .hs-form-required,
+    .hs-error-msg,
+    .hs-error-msgs label {
+        color: $red;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: arial, helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .hs-error-msgs li {
+        list-style-type: none;
+
+    }
+
+    .hs-button {
+        font-family: 'figtree', serif !important;
+        background: $primary !important;
+        color: $dark-green !important;
+        border-color: $primary !important;
+        border-width: 0 !important;
+        border-radius: 50px !important;
+        font-size: 1rem !important;
+        text-shadow: none !important;
+        line-height: 26px !important;
+        box-shadow: none !important;
+        padding: .47rem 1.7rem !important;
+        width: 100%;
+        box-sizing: border-box !important;
+
+        &:hover {
+            background-color: $green-75 !important;
+            border-color: $green-75 !important;
+            color: $dark-green !important;
+        }
+    
+        &:focus {
+            background-color: $primary !important;
+            border-color: $primary !important;
+            box-shadow: 0 0 0 0.188rem $dark-green-50 !important;
+        }
+    }
+
+    form {
+        margin-bottom: 0;
+    }
+}

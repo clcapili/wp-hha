@@ -1,0 +1,33 @@
+// headings
+h1, .h1 { line-height: $h1-line-height; }
+h2, .h2 { line-height: $h2-line-height; }
+h3, .h3 { line-height: $h3-line-height; }
+h4, .h4 { line-height: $h4-line-height; }
+h5, .h5 { line-height: $h5-line-height; }
+h6, .h6 { line-height: $h6-line-height; }
+
+// display
+@each $size, $value in $display-line-heights {
+    .display-#{$size} {
+        line-height:$value;
+        font-weight: 500;
+    }
+}
+
+// lead
+.lead { 
+    font-weight: 500;
+    line-height: 1.5; 
+}
+
+// small
+.small { 
+    line-height: 1.71; 
+}
+
+// label
+.text-label {
+    color: $dark-green;
+    font-weight: 700;
+    text-transform: uppercase;
+}

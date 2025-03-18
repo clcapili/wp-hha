@@ -1,0 +1,16 @@
+{
+    "name": "custom/press-releases-listing",
+    "title": "Press Releases Listing",
+    "description": "A Press Releases listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Press", "Releases", "Listing", "Press Releases Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "press-releases-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

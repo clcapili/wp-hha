@@ -1,0 +1,16 @@
+{
+    "name": "custom/solutions-listing",
+    "title": "Solutions Listing",
+    "description": "A Solutions Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Solutions", "Listing", "Solutions Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "solutions-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "custom/cta",
+    "title": "CTA",
+    "description": "A CTA block.",
+    "category": "custom-blocks",
+    "icon": "cover-image",
+    "keywords": ["CTA"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "cta.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

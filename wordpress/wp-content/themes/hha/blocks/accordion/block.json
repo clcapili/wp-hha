@@ -1,0 +1,17 @@
+{
+    "name": "custom/accordion",
+    "title": "Accordion",
+    "description": "An Accordion block.",
+    "category": "custom-blocks",
+    "icon": "list-view",
+    "keywords": ["Accordion"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "accordion.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

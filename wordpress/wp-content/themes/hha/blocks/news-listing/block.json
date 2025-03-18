@@ -1,0 +1,16 @@
+{
+    "name": "custom/news-listing",
+    "title": "News Listing",
+    "description": "A news listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Article", "News", "Listing", "News Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "news-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

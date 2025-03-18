@@ -1,0 +1,109 @@
+footer {
+    color: $dark-green;
+    padding: 40px 0 32px;
+
+    @media (min-width: 768px) {
+        padding: 64px 0 32px;
+    }
+
+    .site-logo {
+        display: block;
+        margin-bottom: 32px;
+
+        img {
+            width: auto;
+            border-radius: 0;
+        }
+    }
+
+    a {
+        color: $dark-green;
+        text-decoration: none;
+        transition: color .15s ease-in-out;
+
+        &:hover {
+            color: $dark-green-75;
+            transition: color .15s ease-in-out;
+        }
+    }
+
+    // social
+    .social {
+        .social-link {
+            font-size: 2.5rem;    
+            line-height: 1;
+            text-decoration: none;
+    
+            &:hover {
+                color: $dark-green;
+            }
+
+            &:focus {
+                .icon {
+                    background-color: transparent;
+                    box-shadow: 0 0 0 0.188rem $dark-green-50;
+                }
+            }
+
+            .icon {
+                &:hover {
+                    background-color: $primary;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    .footer-heading {
+        p {
+            color: $dark-green;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .footer-columns {
+        margin-bottom: 1.5rem;
+
+        li {
+            a {
+                display: block;
+                padding: 8px 16px;
+                border-radius: 8px;
+
+                &:hover {
+                    background-color: $primary;
+                    color: $dark-green;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 0.188rem $dark-green-50;
+                }
+            }
+        }
+    }
+
+    .list-inline.copyright {
+        text-align: center;
+    
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+
+        .list-inline-item {
+            &:first-child {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 1rem;
+        
+                @media (min-width: 768px) {
+                    display: inline-block;
+                    margin-right: .5rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

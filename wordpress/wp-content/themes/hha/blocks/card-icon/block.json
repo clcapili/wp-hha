@@ -1,0 +1,16 @@
+{
+    "name": "custom/card-icon",
+    "title": "Card Icon",
+    "description": "A Card Icon block.",
+    "category": "custom-blocks",
+    "icon": "index-card",
+    "keywords": ["Card", "Icon", "Card Icon"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "card-icon.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

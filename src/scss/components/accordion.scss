@@ -1,0 +1,37 @@
+.accordion-item {
+    border-left: none;
+    border-top: 1px solid $gray-500;
+    border-right: none;
+}
+
+.accordion-body {
+    background-color: $off-white;
+    padding-top: 0;
+
+    p:last-child { margin-bottom: 0; }
+}
+
+.accordion-button {
+    font-size: unset;
+    font-weight: 500;
+    column-gap: 20px;
+    padding: 1.875rem 1rem;
+
+    &:not(.collapsed) {
+        background-color: $off-white;
+        box-shadow: none;
+    }
+
+    &:after {
+        background-size: 1rem;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    
+    &:hover {
+        color: $dark-green;
+        text-decoration: none;
+    }
+}

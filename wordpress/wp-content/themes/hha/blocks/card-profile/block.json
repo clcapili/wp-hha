@@ -1,0 +1,16 @@
+{
+    "name": "custom/card-profile",
+    "title": "Card Profile",
+    "description": "A Card Profile block.",
+    "category": "custom-blocks",
+    "icon": "index-card",
+    "keywords": ["Card", "Profile", "Card Profile"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "card-profile.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": false
+    }
+}

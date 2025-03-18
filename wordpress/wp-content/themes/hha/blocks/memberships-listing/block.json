@@ -1,0 +1,16 @@
+{
+    "name": "custom/memberships-listing",
+    "title": "Memberships Listing",
+    "description": "A Memberships Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Memberships", "Listing", "Memberships Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "memberships-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

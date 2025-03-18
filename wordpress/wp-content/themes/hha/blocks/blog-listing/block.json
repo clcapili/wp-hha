@@ -1,0 +1,16 @@
+{
+    "name": "custom/blog-listing",
+    "title": "Blog Listing",
+    "description": "A Blog Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Blog", "Listing", "Blog Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blog-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

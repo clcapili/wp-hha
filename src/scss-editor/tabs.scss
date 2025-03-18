@@ -1,0 +1,16 @@
+.tabs-sidebar {
+    .nav {
+        list-style: none !important;
+        padding: 0 !important;
+
+        .nav-item .nav-link {
+            padding: 1rem !important;
+        }
+    }
+}
+
+.tab-pane {
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+}

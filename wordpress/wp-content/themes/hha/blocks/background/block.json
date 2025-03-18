@@ -1,0 +1,17 @@
+{
+    "name": "custom/background",
+    "title": "Background",
+    "description": "A Background block.",
+    "category": "custom-blocks",
+    "icon": "slides",
+    "keywords": ["Background"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "background.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

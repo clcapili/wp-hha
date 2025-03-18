@@ -1,0 +1,17 @@
+{
+    "name": "custom/lever",
+    "title": "Lever Search",
+    "description": "Lever Search block.",
+    "category": "custom-blocks",
+    "icon": "slides",
+    "keywords": ["LeverSearch", "Lever", "Search"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "leverSearch.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

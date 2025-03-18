@@ -1,0 +1,17 @@
+{
+    "name": "custom/tabs",
+    "title": "Tabs",
+    "description": "A tabs block.",
+    "category": "custom-blocks",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["Tabs", "Nav"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "tabs.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

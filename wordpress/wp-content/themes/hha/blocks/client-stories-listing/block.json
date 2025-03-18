@@ -1,0 +1,16 @@
+{
+    "name": "custom/client-stories-listing",
+    "title": "Client Stories Listing",
+    "description": "A Client Stories Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Client", "Stories", "Listing", "Client Stories Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "client-stories-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

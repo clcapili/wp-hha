@@ -1,0 +1,17 @@
+{
+    "name": "custom/group",
+    "title": "Group",
+    "description": "A group block.",
+    "category": "custom-blocks",
+    "icon": "slides",
+    "keywords": ["Group"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "group.php"
+    },
+    "align": "full",
+    "supports": {
+        "jsx": true,
+        "anchor": true
+    }
+}

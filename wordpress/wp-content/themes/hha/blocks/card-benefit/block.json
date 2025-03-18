@@ -1,0 +1,16 @@
+{
+    "name": "custom/card-benefit",
+    "title": "Card Benefit",
+    "description": "A Card Benefit block.",
+    "category": "custom-blocks",
+    "icon": "index-card",
+    "keywords": ["Card", "Benefit", "Card Benefit"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "card-benefit.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}
