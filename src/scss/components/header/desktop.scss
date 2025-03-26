@@ -164,8 +164,9 @@
                                             .icon {
                                                 position: relative;
                                                 margin-left: 5px;
-                                                color: $gray-500;
+                                                color: $gray-800;
                                                 font-size: 1rem;
+                                                font-weight: 400;
                                                 transition: .15s ease-in-out;
                                             }
     
@@ -240,8 +241,9 @@
                                     .icon {
                                         position: relative;
                                         margin-left: 5px;
-                                        color: $gray-500;
+                                        color: $dark-green;
                                         font-size: 1rem;
+                                        font-weight: 400;
                                         transition: .15s ease-in-out;
                                     }
 

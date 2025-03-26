@@ -218,7 +218,9 @@ StateInfoCenterArchive.DEFAULTS = {
 	preRequests: [
 		{
 			endpoint: '/wp-json/wp/v2/states',
-			params: {}
+			params: {
+                per_page: 50
+            }
 		}
 	],
 	templates: {

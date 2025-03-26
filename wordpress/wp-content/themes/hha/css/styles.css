@@ -18642,8 +18642,9 @@ footer .list-inline.copyright .list-inline-item:first-child {
 .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .submenu-section.with-icon li a .icon {
   position: relative;
   margin-left: 5px;
-  color: #AFBBC4;
+  color: #343636;
   font-size: 1rem;
+  font-weight: 400;
   transition: 0.15s ease-in-out;
 }
 .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .submenu-section.with-icon li a:hover {
@@ -18706,8 +18707,9 @@ footer .list-inline.copyright .list-inline-item:first-child {
 .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .header-cta a .icon {
   position: relative;
   margin-left: 5px;
-  color: #AFBBC4;
+  color: #004152;
   font-size: 1rem;
+  font-weight: 400;
   transition: 0.15s ease-in-out;
 }
 .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .header-cta a:hover {
@@ -18922,7 +18924,7 @@ footer .list-inline.copyright .list-inline-item:first-child {
 .header .header-mobile .header-mobile-menu .main-menu .mobile-nav-item .mobile-submenu .submenu-section li a .icon {
   position: relative;
   top: 1px;
-  color: #AFBBC4;
+  color: #343636;
   margin-left: 5px;
 }
 .header .header-mobile .header-mobile-menu .main-menu .mobile-nav-item .header-cta {
