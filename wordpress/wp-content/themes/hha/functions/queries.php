@@ -191,6 +191,24 @@ function get_events() {
             $thumbnail      = get_the_post_thumbnail_url();
             $thumbnailID    = get_post_thumbnail_id();
             $altText        = get_post_meta($thumbnailID, '_wp_attachment_image_alt', true);
+            
+            //passing dates
+            $eventDate = get_field('date', $id);
+            $start = !empty($eventDate['start']) ? DateTime::createFromFormat('F j, Y', $eventDate['start']) : null;
+            $end   = !empty($eventDate['end'])   ? DateTime::createFromFormat('F j, Y', $eventDate['end'])   : null;
+
+            if ($start && $end) {
+                if ($start->format('Y-m-d') === $end->format('Y-m-d')) {
+                    $eventDate = $start->format('l') . ' – ' . $start->format('F') . ' ' . $start->format('j') . ', ' . $start->format('Y');
+                } else {
+                    $eventDate = $start->format('l') . ' – ' . $end->format('l') . ', ' . $start->format('F') . ' ' . $start->format('j') . ' – ' . $end->format('j') . ', ' . $start->format('Y');
+                }
+            } elseif ($start) {
+                $eventDate = $start->format('l') . ' – ' . $start->format('F') . ' ' . $start->format('j') . ', ' . $start->format('Y');
+            } elseif ($end) {
+                $eventDate = $end->format('l') . ' – ' . $end->format('F') . ' ' . $end->format('j') . ', ' . $end->format('Y');
+            }
+
 
             $link = get_field('link', $id);
             
@@ -199,7 +217,8 @@ function get_events() {
                 'thumbnail'     => $thumbnail,
                 'alt'           => $altText,
                 'title'         => get_the_title($id),
-                'link'          => !empty($link) ? $link : '#'
+                'link'          => !empty($link) ? $link : '#',
+                'date'          => $eventDate
             ];
             
         }
@@ -476,14 +495,24 @@ function get_state_info_center() {
             $thumbnailID    = get_post_thumbnail_id();
             $altText        = get_post_meta($thumbnailID, '_wp_attachment_image_alt', true);
             
+            $external_link = get_post_meta($id, 'external_link', true); 
+
+            if ($external_link) {
+                $final_link = $external_link;
+                $target     = '_blank';
+            } else {
+                $final_link = get_the_permalink($id);
+                $target     = '_self';
+            }
+
             $items[] = [
-                'id'            => $id,
-                'thumbnail'     => $thumbnail,
-                'alt'           => $altText,
-                'title'         => get_the_title($id),
-                'link'          => get_the_permalink($id)
+                'id'         => $id,
+                'thumbnail'  => $thumbnail,
+                'alt'        => $altText,
+                'title'      => get_the_title($id),
+                'link'       => $final_link,
+                'target'     => $target,
             ];
-            
         }
     }
 

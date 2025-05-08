@@ -100,6 +100,7 @@ class EventsArchive extends Archive {
 			.then(response => response.json())
 			.then(response => {
 				__.dom.hide(this.archiveLoader);
+				console.log(response);
 
 				let totalPages = response.numPages;
 
@@ -123,7 +124,8 @@ class EventsArchive extends Archive {
 							image: item.thumbnail,
 							alt: item.alt,
 							title: item.title,
-							link: item.link
+							link: item.link,
+							date: item.date
 						});
 					}
 				}
@@ -266,6 +268,8 @@ EventsArchive.DEFAULTS = {
 					{{endif}}
 
 					<div class="card-body">
+						<p class="text-uppercase event-date mb-2">{{date}}</p>
+
 						<h3 class="card-title">{{& title}}</h3>
 					</div>
 				</a>

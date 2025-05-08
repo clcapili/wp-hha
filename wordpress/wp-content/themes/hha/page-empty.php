@@ -1,7 +1,7 @@
 <?php 
 /*
  * Template Name: Empty
- * Template Post Type: page, solutions
+ * Template Post Type: page, solutions, products
  */
 ?>
 

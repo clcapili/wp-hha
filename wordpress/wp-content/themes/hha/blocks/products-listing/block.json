@@ -1,0 +1,16 @@
+{
+    "name": "custom/products-listing",
+    "title": "Products Listing",
+    "description": "A Products Listing block.",
+    "category": "custom-blocks",
+    "icon": "excerpt-view",
+    "keywords": ["Products", "Listing", "Products Listing"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "products-listing.php"
+    },
+    "align": "full",
+    "supports": {
+        "anchor": true
+    }
+}

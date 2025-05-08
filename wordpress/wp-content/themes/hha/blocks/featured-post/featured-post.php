@@ -44,13 +44,11 @@ $featured = get_posts([
 ?>
 
 <?php if (!empty($featured)) { ?>
-    <?php $image  = get_lazy_post_thumbnail($featured[0], 'img-fluid'); ?>
-
     <a <?= $anchor ?> href="<?= get_the_permalink($featured[0]) ?>" class="<?= $class_name ?> card card-featured">
         <div class="row flex-lg-row-reverse">
-            <?php if (!empty($image)) { ?>
+            <?php if ( has_post_thumbnail($featured[0]) ) { ?>
                 <div class="col-lg-6">
-                    <?= $image ?>
+                    <?= get_the_post_thumbnail($featured[0], 'full', ['class' => 'img-fluid', 'loading' => 'lazy']); ?>
                 </div>
             <?php } ?>
 

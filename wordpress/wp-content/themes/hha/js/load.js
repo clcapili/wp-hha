@@ -26,13 +26,16 @@ $(document).ready(function() {
         var scrollTop = $window.scrollTop();
 
 		if (scrollTop > lastScrollTop && scrollTop > classTrigger) {
+            $header.addClass('scrolled');
 			$header.removeClass('show');
 		} else {
 			$header.addClass('show');
+
 			if (scrollTop < classTrigger) {
 				$header.removeClass('scrolled');
 			}
 		}
+
         lastScrollTop = scrollTop;
     });
 

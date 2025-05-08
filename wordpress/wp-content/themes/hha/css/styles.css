@@ -18506,6 +18506,9 @@ footer .list-inline.copyright .list-inline-item:first-child {
   z-index: 1030;
   transition: top 0.5s;
 }
+.header.header-light {
+  background-color: #ffffff;
+}
 .header.show {
   top: 0;
 }
@@ -18607,12 +18610,18 @@ footer .list-inline.copyright .list-inline-item:first-child {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 0 0 12px 12px;
 }
+.header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .adaptive-col {
+  min-width: 33.33%;
+  max-width: 50%;
+  width: auto;
+}
 .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .submenu-section {
   padding: 40px 24px;
 }
 .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .submenu-section .submenu-label {
   display: block;
   margin-bottom: 16px;
+  padding: 0 12px;
 }
 .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .submenu-section small, .header .header-desktop .main-menu .main-menu-items .nav-item.with-submenu .submenu .submenu-inner .submenu-section .small {
   color: #6C757D;
@@ -19193,6 +19202,9 @@ html.mobile-menu-open {
 .listing-block .archive-loader img {
   max-width: 50px;
   height: auto;
+}
+.listing-block .event-date {
+  color: #6C757D;
 }
 
 .progress {

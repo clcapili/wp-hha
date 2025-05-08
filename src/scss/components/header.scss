@@ -5,6 +5,10 @@
     width: 100%;
     z-index: $zindex-fixed;
     transition: top .5s;
+
+    &.header-light {
+        background-color: #ffffff;
+    }
     
     &.show {
         top: 0;

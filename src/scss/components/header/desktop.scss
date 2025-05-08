@@ -121,6 +121,12 @@
                             background-color: $white;
                             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
                             border-radius: 0 0 12px 12px;
+                          
+                            .adaptive-col {
+                                min-width: 33.33%;
+                                max-width: 50%;
+                                width: auto;
+                            }
     
                             .submenu-section {
                                 padding: 40px 24px;
@@ -128,6 +134,7 @@
                                 .submenu-label {
                                     display: block;
                                     margin-bottom: 16px;
+                                    padding: 0 12px;
                                 }
         
                                 small {

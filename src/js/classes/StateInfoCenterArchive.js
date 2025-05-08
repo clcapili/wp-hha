@@ -122,7 +122,8 @@ class StateInfoCenterArchive extends Archive {
 							image: item.thumbnail,
 							alt: item.alt,
 							title: item.title,
-							link: item.link
+							link: item.link,
+							target: item.target 
 						});
 					}
 				}
@@ -261,7 +262,7 @@ StateInfoCenterArchive.DEFAULTS = {
 		`,
 		post: `
 			<div class="col-md-6 col-lg-4">
-				<a href="{{link}}" target="_self" class="card card-flush mb-3">
+				<a href="{{link}}" target="{{target}}" class="card card-flush mb-3">
 					{{if (image)}}
 						<img src="{{image}}" class="img-fluid" alt="{{alt}}" />
 					{{endif}}

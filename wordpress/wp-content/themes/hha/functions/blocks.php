@@ -44,6 +44,7 @@ function register_acf_blocks() {
     register_block_type(get_template_directory() . '/blocks/page-header');
     register_block_type(get_template_directory() . '/blocks/partners-listing');
     register_block_type(get_template_directory() . '/blocks/press-releases-listing');
+    register_block_type(get_template_directory() . '/blocks/products-listing');
     register_block_type(get_template_directory() . '/blocks/resources-explore');
     register_block_type(get_template_directory() . '/blocks/resources-latest');
     register_block_type(get_template_directory() . '/blocks/resources-listing');

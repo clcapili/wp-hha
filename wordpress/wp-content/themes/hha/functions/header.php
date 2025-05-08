@@ -3,13 +3,13 @@
 // desktop
 function columnDescriptiveLinksDesktop($layout) {
     $output = '
-        <div class="col-lg-4">
+        <div class="col-lg col-xl-4">
             <ul class="list-unstyled submenu-section with-icon">';
 
             if (!empty($links = $layout['links'])) {
                 foreach ($links as $link) {
-                    $output .= '<li>';
-                    $output .= '<a href="'.$link['link']['url'].'">'.$link['link']['title'].'<i class="icon icon-arrow-right"></i></a>';
+                    $output .= '<li class="d-flex flex-column">';
+                    $output .= '<a href="'.$link['link']['url'].'" class="d-flex align-items-center">'.$link['link']['title'].'<i class="icon icon-arrow-right"></i></a>';
                     $output .= '<small>'.$link['description'].'</small>';
                     $output .= '</li>';
                 }
@@ -24,7 +24,7 @@ function columnDescriptiveLinksDesktop($layout) {
 
 function columnLinkListDesktop($layout) {
     $output = '
-        <div class="col">';
+        <div class="adaptive-col">';
 
     $output .= '
             <ul class="list-unstyled submenu-section">

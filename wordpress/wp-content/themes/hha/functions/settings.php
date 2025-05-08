@@ -139,7 +139,7 @@ add_filter('manage_edit-page_columns', 'yoast_seo_admin_remove_columns', 10, 1);
 function my_acf_show_admin($show) {
 	// provide a list of usernames who can edit custom field definitions here
 	$admins = [
-		'ccapili@mblm.com', 'dmihalakakos@mblm.com', 'atran@mblm.com', 'richard@elovia.it'
+		'ccapili@mblm.com', 'dmihalakakos@mblm.com', 'atran@mblm.com', 'rsulollari@mblm.com'
     ];
 
 	// get the current user

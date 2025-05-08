@@ -1,9 +1,13 @@
-
-<?php get_header(); ?>
-
-<?php edit_link_override(get_queried_object_id()); ?>
-
-<?php $fields = get_fields(); ?>
+<?php
+	$externalLink = get_field('external_link');
+	
+    if (!empty($externalLink)) {
+        wp_redirect($externalLink);
+    } else {
+		get_header();
+	
+		edit_link_override(get_queried_object_id());
+?>
 
 <main class="main" id="main-content">
 
@@ -15,4 +19,7 @@
 
 </main>
 
-<?php get_footer(); ?>
+<?php
+		get_footer();
+	}
+?>
